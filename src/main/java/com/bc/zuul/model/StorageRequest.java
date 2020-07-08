@@ -1,14 +1,14 @@
 package com.bc.zuul.model;
 
 /**
- * .<br/>
- * <p>
- * Copyright: Copyright (c) 2019  zteits
  * @ClassName: StorageRequest
  * @Description:放行配置
- * @version: v1.0.0
- * @author: Dylan
- * @date: 2019-02-21 13:57
+ * <p>Copyright:Copyright(c)2018</p >
+ * <p>Create Date:2019/9/1 下午5:14</p >
+ * <p>Modified By:linxi</p >
+ * <p>Modified Date:2019/9/1 下午5:14</p >
+ * @author linxi
+ * @version Version 0.1
  */
 public class StorageRequest {
 

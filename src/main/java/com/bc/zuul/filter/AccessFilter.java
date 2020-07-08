@@ -28,7 +28,12 @@ import java.util.List;
 /**
  * 鉴权过滤器
  *
- * @author Administrator
+ * <p>Copyright:Copyright(c)2018</p >
+ * <p>Create Date:2019/9/1 下午5:14</p >
+ * <p>Modified By:linxi</p >
+ * <p>Modified Date:2019/9/1 下午5:14</p >
+ * @author linxi
+ * @version Version 0.1
  */
 @Configuration
 public class AccessFilter extends ZuulFilter {
