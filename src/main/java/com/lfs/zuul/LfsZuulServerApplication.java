@@ -1,17 +1,17 @@
-package com.bc.zuul;
+package com.lfs.zuul;
 
-import com.bc.annotation.BcApplication;
+import com.lfs.annotation.LfsApplication;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @EnableZuulProxy
-@BcApplication("com.bc.*")
-@MapperScan("com.bc.**.dao")
-public class BcZuulServerApplication {
+@LfsApplication("com.lfs.*")
+@MapperScan("com.lfs.**.dao")
+public class LfsZuulServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BcZuulServerApplication.class, args);
+		SpringApplication.run(LfsZuulServerApplication.class, args);
 	}
 
 }

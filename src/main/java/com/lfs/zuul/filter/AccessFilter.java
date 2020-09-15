@@ -1,17 +1,17 @@
-package com.bc.zuul.filter;
+package com.lfs.zuul.filter;
 
 import com.alibaba.fastjson.JSONObject;
-import com.bc.base.dto.ResultObject;
-import com.bc.base.enums.ErrorCodeEnum;
-import com.bc.cache.redis.base.CommonCache;
-import com.bc.cache.redis.base.StringCache;
-import com.bc.interfaces.common.RedisConstants;
-import com.bc.interfaces.common.ShareConstants;
-import com.bc.interfaces.model.dto.TokenDateModelDTO;
-import com.bc.zuul.model.ConveyEnums;
-import com.bc.zuul.model.InterceptEnums;
-import com.bc.zuul.model.StorageRequest;
-import com.bc.zuul.model.StorageRequestRowMapper;
+import com.lfs.base.dto.ResultObject;
+import com.lfs.base.enums.ErrorCodeEnum;
+import com.lfs.cache.redis.base.CommonCache;
+import com.lfs.cache.redis.base.StringCache;
+import com.lfs.interfaces.common.RedisConstants;
+import com.lfs.interfaces.common.ShareConstants;
+import com.lfs.interfaces.model.dto.TokenDateModelDTO;
+import com.lfs.zuul.model.ConveyEnums;
+import com.lfs.zuul.model.InterceptEnums;
+import com.lfs.zuul.model.StorageRequest;
+import com.lfs.zuul.model.StorageRequestRowMapper;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.apache.commons.lang.StringUtils;
@@ -110,7 +110,7 @@ public class AccessFilter extends ZuulFilter {
 	}
 
 	public  Boolean intercepUrl(RequestContext ctx,String url,String accessToken){
-		String sql = "select * from bc_storage_request";
+		String sql = "select * from lfs_storage_request";
 		RowMapper<StorageRequest> storageRequest = new StorageRequestRowMapper();
 		List<StorageRequest> urlList =  jdbcTemplate.query(sql,storageRequest);
 		for (int i = 0; i < urlList.size(); i++) {

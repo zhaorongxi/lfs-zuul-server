@@ -1,7 +1,7 @@
-package com.bc.zuul.fallBack;
+package com.lfs.zuul.fallBack;
 
 import com.alibaba.fastjson.JSON;
-import com.bc.base.dto.ResultObject;
+import com.lfs.base.dto.ResultObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;

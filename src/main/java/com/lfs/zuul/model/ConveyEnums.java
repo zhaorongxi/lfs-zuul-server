@@ -1,4 +1,4 @@
-package com.bc.zuul.model;
+package com.lfs.zuul.model;
 
 public enum ConveyEnums {
 

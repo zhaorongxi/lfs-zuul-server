@@ -2,15 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.bc.zuul</groupId>
-	<artifactId>bc-zuul-server</artifactId>
+	<groupId>com.lfs.zuul</groupId>
+	<artifactId>lfs-zuul-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bc-zuul-server</name>
+	<name>lfs-zuul-server</name>
 	<description>网关服务</description>
 
 	<parent>
-		<artifactId>bc-framework</artifactId>
-		<groupId>com.bc.framework</groupId>
+		<artifactId>lfs-framework</artifactId>
+		<groupId>com.lfs.framework</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
@@ -24,26 +24,26 @@
 	<dependencies>
 
 		<dependency>
-			<groupId>com.bc.framework</groupId>
-			<artifactId>bc-cache</artifactId>
+			<groupId>com.lfs.framework</groupId>
+			<artifactId>lfs-cache</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.bc.framework</groupId>
-			<artifactId>bc-annotation</artifactId>
+			<groupId>com.lfs.framework</groupId>
+			<artifactId>lfs-annotation</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.bc.framework</groupId>
-			<artifactId>bc-base</artifactId>
+			<groupId>com.lfs.framework</groupId>
+			<artifactId>lfs-base</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.bc.framework</groupId>
-			<artifactId>bc-interfaces</artifactId>
+			<groupId>com.lfs.framework</groupId>
+			<artifactId>lfs-interfaces</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
@@ -95,7 +95,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.bc.zuul.BcZuulServerApplication</mainClass>
+					<mainClass>com.lfs.zuul.LfsZuulServerApplication</mainClass>
 				</configuration>
 				<executions>
 					<execution>

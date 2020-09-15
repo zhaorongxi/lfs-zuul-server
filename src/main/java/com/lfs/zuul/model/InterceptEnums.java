@@ -1,4 +1,4 @@
-package com.bc.zuul.model;
+package com.lfs.zuul.model;
 
 /**
  * <p>Copyright:Copyright(c)2018</p >

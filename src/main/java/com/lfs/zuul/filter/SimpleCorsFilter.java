@@ -1,4 +1,4 @@
-package com.bc.zuul.filter;
+package com.lfs.zuul.filter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;

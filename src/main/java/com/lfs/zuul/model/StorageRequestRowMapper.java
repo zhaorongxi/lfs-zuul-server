@@ -1,4 +1,4 @@
-package com.bc.zuul.model;
+package com.lfs.zuul.model;
 
 import org.springframework.jdbc.core.RowMapper;
 
